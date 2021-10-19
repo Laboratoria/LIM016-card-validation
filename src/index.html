@@ -6,9 +6,105 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <div class="logo">
+        <img src="Diseño/seguro-canguro.png" alt="Logo" id="canguroLogo">
+        <h1>Seguros<br>Canguros</h1>
+      </div>
+      <div class="side">
+        <div class="icons">
+          <img src="Diseño/happy.png" alt="Ícono cliente feliz" id="smile">
+          <label class="labelHeader">Miles de clientes felices</label>
+        </div>
+        <div class="icons">
+          <img src="Diseño/padlock.png" alt="Ícono compra segura" id="lock">
+          <label class="labelHeader">Compra 100% segura</label>
+        </div>
+    </div>
+    </header>
+    <section>
+      <h2>Pago con tarjeta de crédito online</h2>
+      <img src="Diseño/tarjetas.jpg" alt="tarjetas" id="imgtarjetas">
+      <br>
+      <br>
+      <br>
+      <p class="requiredField">*Campos obligatorios</p>
+      <main>
+        <label>Número de tarjeta</label><span class="requiredField">*</span>
+        <br>
+        <input type="text" id="cardNum" placeholder="**** **** **** ****" minlength="10" maxlength="16" class="longInput">
+        <p id="answer"></p>
+        <br>
+        <label>Fecha de expiración</label><span class="requiredField">*</span>
+        <br>
+        <select name="month" id="month" class="shortInput">
+          <option value="Mes">Mes</option>
+          <option value="Enero">01</option>
+          <option value="Febrero">02</option>
+          <option value="Marzo">03</option>
+          <option value="Abril">04</option>
+          <option value="Mayo">05</option>
+          <option value="Junio">06</option>
+          <option value="Julio">07</option>
+          <option value="Agosto">08</option>
+          <option value="Setiembre">09</option>
+          <option value="Octubre">10</option>
+          <option value="Noviembre">11</option>
+          <option value="Diciembre">12</option>
+        </select>
+        <span>/</span>
+        <select name="year" id="year" class="shortInput">
+          <option value="Año">Año</option>
+          <option value="2021">21</option>
+          <option value="2022">22</option>
+          <option value="2023">23</option>
+          <option value="2024">24</option>
+          <option value="2025">25</option>
+          <option value="2026">26</option>
+          <option value="2027">27</option>
+          <option value="2028">28</option>
+          <option value="2029">29</option>
+          <option value="2030">30</option>
+          <option value="2031">31</option>
+          <option value="2032">32</option>
+        </select>
+        <br>
+        <br>
+        <label>Código de Seguridad</label><span class="requiredField">*</span>
+        <br>
+        <input type="password" placeholder="***" minlength="3" maxlength="4" class="shortInput" id="password">
+        <br>
+        <br>
+        <label>Nombre del titular</label><span class="requiredField">*</span>
+        <br>
+        <input type="text" placeholder="Como aparece en la tarjeta" class="longInput">
+        <br>
+        <br>
+        <label>Correo</label>
+        <br>
+        <input type="email" placeholder="correo@dominio.com" class="longInput">
+        <br>
+        <br>
+        <br>
+        <input type="checkbox"><label>Guardar tarjeta</label>
+        <br>
+        <br>     
+        <button id="validMask">Pagar S/.300.00</button>
+      </main>
+      <br>
+      <br>
+      <br>
+   </section>
+    <footer>
+      <h4>Oficinas</h4>
+      <p class="contact">Av. Las Petunias 555</p>
+      <h4>Teléfono</h4>
+      <p class="contact">555-5555</p>
+      <img src="Diseño/facebook.png" alt="Logo Facebook" id="facebook">
+      <img src="Diseño/instagram.png" alt="Logo Instagram" id="instagram">
+      <img src="Diseño/twitter.png" alt="Logo Twitter" id="twitter">
+      <p id="trademark">®2021 Seguros Canguros</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
